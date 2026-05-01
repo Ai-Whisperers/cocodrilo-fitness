@@ -28,7 +28,14 @@ export default function FAQPage() {
           </div>
         </div>
       </main>
-      <Footer />
+      <Footer
+        businessName="Complejo Cocodrilo"
+        tagline="Fitness y Bienestar en Asunción"
+        address="Av. Santísima Trinidad, Asunción"
+        phone="0986 106 062"
+        hours="Lun-Sáb: 9:00 - 20:00"
+        waPhone="595986106062"
+      />
       <WhatsAppFloat />
     </>
   )

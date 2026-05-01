@@ -19,7 +19,14 @@ export default function NotFound() {
           </Link>
         </div>
       </main>
-      <Footer />
+      <Footer
+        businessName="Complejo Cocodrilo"
+        tagline=""
+        address=""
+        phone="595986106062"
+        hours=""
+        waPhone="595986106062"
+      />
       <WhatsAppFloat />
     </>
   )
