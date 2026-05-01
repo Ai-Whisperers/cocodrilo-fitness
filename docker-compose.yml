@@ -12,6 +12,7 @@ services:
       mode: replicated
       replicas: 2
       labels:
+        - "traefik.docker.network=agent-net"
         - "traefik.enable=true"
         - "traefik.http.routers.cocodrilo-fitness.rule=Host(`cocodrilo-fitness.paragu-ai.com`)"
         - "traefik.http.routers.cocodrilo-fitness.entrypoints=websecure"
