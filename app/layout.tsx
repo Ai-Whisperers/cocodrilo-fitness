@@ -1,6 +1,8 @@
 import type { Metadata } from "next"
 import { Montserrat, Playfair_Display } from "next/font/google"
 import "./globals.css"
+import { CookieConsent } from "@ai-whisperers/seo"
+import { WhatsAppFloat } from "@ai-whisperers/whatsapp"
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -48,7 +50,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="font-body antialiased bg-background text-foreground">{children}</body>
+      <body className="font-body antialiased bg-background text-foreground">{children}
+        <WhatsAppFloat />
+        <CookieConsent />
+      </body>
     </html>
   )
 }
